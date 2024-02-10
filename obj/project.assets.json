@@ -2898,19 +2898,19 @@
     ]
   },
   "packageFolders": {
-    "/home/spide/.nuget/packages/": {}
+    "/home/ryan/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/spide/Desktop/Memoire/API/Bibliotheque/Bibliotheque.csproj",
+      "projectUniqueName": "/home/ryan/RiderProjects/APIBiblio/Bibliotheque.csproj",
       "projectName": "Bibliotheque",
-      "projectPath": "/home/spide/Desktop/Memoire/API/Bibliotheque/Bibliotheque.csproj",
-      "packagesPath": "/home/spide/.nuget/packages/",
-      "outputPath": "/home/spide/Desktop/Memoire/API/Bibliotheque/obj/",
+      "projectPath": "/home/ryan/RiderProjects/APIBiblio/Bibliotheque.csproj",
+      "packagesPath": "/home/ryan/.nuget/packages/",
+      "outputPath": "/home/ryan/RiderProjects/APIBiblio/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/spide/.nuget/NuGet/NuGet.Config"
+        "/home/ryan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2966,7 +2966,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/spide/.dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
