@@ -1,4 +1,7 @@
+using Bibliotheque;
+using Bibliotheque.Repository;
 using Database;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +18,9 @@ builder.Services.AddDbContext<ApiContext>(opts =>
     {
         var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
         opts.UseMySQL(connectionString);
-    });
+    })
+    .AddTransient<IClientRepository, ClientRepository>();
+
 
 var app = builder.Build();
 
@@ -33,6 +38,8 @@ var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
+
+app.MapGet("/client", ([FromServices] IClientRepository clientRepository) => clientRepository.GetClients());
 
 app.MapGet("/weatherforecast", () =>
 {
